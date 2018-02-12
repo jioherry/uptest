@@ -6,7 +6,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.http.Part;
 
-@WebServlet("/uploadServlet3.do")
+@WebServlet("/uploadServlet3.do") 
 @MultipartConfig(fileSizeThreshold = 1024 * 1024, maxFileSize = 5 * 1024 * 1024, maxRequestSize = 5 * 5 * 1024 * 1024)
 // 當數據量大於fileSizeThreshold值時，內容將被寫入磁碟
 // 上傳過程中無論是單個文件超過maxFileSize值，或者上傳的總量大於maxRequestSize 值都會拋出IllegalStateException 異常
